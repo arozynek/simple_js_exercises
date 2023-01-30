@@ -1,6 +1,6 @@
 var firstWord = prompt("Podaj słowo lub zdanie: ");
 
-function palindroom(word1) {
+function palindrome(word1) {
   if (sortString(word1) === notSortString(word1)) {
     console.log("Podano palindrom :) !");
   } else {
@@ -24,7 +24,7 @@ function notSortString(string) {
   return lettersArray.join('');
 }
 
-palindroom(firstWord);
+palindrome(firstWord);
 
 function onlyLetters (leter) {
   return leter !== ' ';
